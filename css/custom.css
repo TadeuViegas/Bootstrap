@@ -1,0 +1,43 @@
+.intro{
+    width:70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.img1{
+    width: 40%;
+    margin-right: 30px;
+}
+
+.clientes{
+    width: 70%;
+    margin: auto;
+}
+
+.livro{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    /* background-color: #f1766a; */
+    text-align: center;
+    margin-top: 50px;
+}
