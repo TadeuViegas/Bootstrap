@@ -1,3 +1,25 @@
+.header{
+    width: 100%;
+}
+
+.header .navbar-collapse{
+    width: auto;
+}
+
+.header .nav-link{
+    color: #000000;
+}
+
+.header .nav-link:hover{
+    color: red;
+}
+
+.footer{
+    /* background-color: #f1766a; */
+    text-align: center;
+    margin-top: 50px;
+}
+
 .intro{
     width:70%;
     display: flex;
@@ -23,21 +45,3 @@
     margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-    /* background-color: #f1766a; */
-    text-align: center;
-    margin-top: 50px;
-}
