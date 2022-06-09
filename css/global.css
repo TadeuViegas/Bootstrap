@@ -1,0 +1,17 @@
+h1,h2,h3{
+    font-weight: 500;
+}
+
+.block{
+    margin-bottom: 40px;
+}
+
+.button-primary{
+    background-color: var(--corlogo);
+    border-color: var(--corlogo);
+}
+
+.button-primary:hover{
+    background-color: var(--darklogo);
+    border-color: var(--darklogo);
+}

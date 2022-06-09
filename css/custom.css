@@ -1,44 +1,39 @@
+/* CSS cabeçalho*/
 .header{
     width: 100%;
 }
 
 .header .navbar-collapse{
     width: auto;
+    justify-content: center;
 }
 
 .header .nav-link{
-    color: #000000;
+    color: var(--texto);
+    font-weight: 500;
 }
 
 .header .nav-link:hover{
-    color: red;
+    color: var(--darklogo);
 }
+/* //CSS cabeçalho */
 
+
+/* CSS rodapé */
 .footer{
-    /* background-color: #f1766a; */
     text-align: center;
-    margin-top: 50px;
 }
+/* //CSS rodapé */
 
-.intro{
-    width:70%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 30px;
-    justify-content: space-around;
-}
 
-.img1{
-    width: 40%;
-    margin-right: 30px;
-}
-
+/* CSS Pag Cadastro */
 .clientes{
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
+
+
+/* CSS Pag Livros */
 
 .livro{
     width: 70%;
