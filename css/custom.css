@@ -26,17 +26,27 @@
 /* //CSS rodapé */
 
 
-/* CSS Pag Cadastro */
-.clientes{
+/* CSS Pag Cadastro, Livros, Aluguel, Venda */
+.clientes,
+.livro,
+.aluguel{
     width: 70%;
     margin: auto;
 }
+/* //CSS Pag Cadastro, Livros, Aluguel, Venda */
 
-
-/* CSS Pag Livros */
-
-.livro{
-    width: 75%;
-    margin: auto;
+/* CSS açoes edicao e remover pag de alugel e venda */
+a{
+    text-decoration: none;
+    color: var(--texto);
 }
 
+a:hover{
+    color: var(--darklogo);
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
