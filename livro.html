@@ -16,75 +16,197 @@
 <body>
     <!-- header -->
     <header class="header">
-
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="#">
-                <img src="img/favicon-32x32.png" class="img-fluid" alt="logo da livraria">
-              </a>
-              <a class="navbar-brand" href="#" >Book.Net</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="cadastro.html">Cadastro</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Venda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Aluguel</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="livro.html">Livro</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <nav
+          class="navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <a class="navbar-brand" href="#">
+            <img src="img/favicon-32x32.png" class="img-fluid" alt="" />
+            Book.net</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="venda.html">Venda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aluguel.html">Aluguel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="livro.html">Livros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <!-- //header -->
 
     <!-- cadastro livro -->
     <div class="livro">
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
-      
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        <span class="input-group-text" id="basic-addon2">@example.com</span>
-      </div>
-      
-      <label for="basic-url" class="form-label">Your vanity URL</label>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-      </div>
-      
-      <div class="input-group mb-3">
-        <span class="input-group-text">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-text">.00</span>
-      </div>
-      
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-      </div>
-      
-      <div class="input-group">
-        <span class="input-group-text">With textarea</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-      </div>
+      <form class="row g-3 needs-validation mt-4 block" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">ISBN (International Standard Book Number)</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite um ISBN!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nome do livro
+          </label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite o Nome do livro!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nome da editora</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite o nome da editora!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Autor do livro</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite o autor do livro!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Ano de publicação</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite o Ano de publicação!
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="input-group mt-4">
+          <span class="input-group-text">Descreva o assunto do livro:</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Quantidade que a livraria tem:</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor digite o Ano de publicação!
+            </div>
+          </div>
+        </div>
+
+        <p>O livro é para comprar ou alugar?</p>
+        <div class="form-check mt-1">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+             Compra
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Aluguel 
+          </label>
+        </div>        
+        <p>O livro é nacional ou importado?</p>
+        <div class="form-check mt-1">
+          <label for=""></label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Nacional
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Importado
+          </label>
+        </div>
+        
+        
+        <p>Informações opcionais:</p>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Preço de venda</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+          <div class="invalid-feedback">
+            Por favor digite Preço de venda!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Preço de aluguel</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+          <div class="invalid-feedback">
+            Por favor digite tPreço de aluguel!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Preço de
+            renovação de aluguel</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+          <div class="invalid-feedback">
+            Por favor digite oPreço de renovação de aluguel!
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Concorde com os termos e condições
+            </label>
+            <div class="invalid-feedback">
+              Você deve concordar antes de enviar.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn button-primary btn-primary" type="submit">
+            Enviar formulário</button>
+        </div>
+      </form>
     </div>
     <!-- cadastro livro -->
       
