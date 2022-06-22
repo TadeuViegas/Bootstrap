@@ -6,3 +6,24 @@
         
     }
 }
+
+@media (max-width: 768px) {
+    #logoimg{
+        width: 336px;
+        height: 271px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .img-container{
+        height: 120px;
+    }
+
+    .img-container img{
+        max-height: 180px;
+    }
+
+    h2{
+        text-align: start;
+    }
+}

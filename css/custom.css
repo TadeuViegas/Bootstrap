@@ -35,18 +35,17 @@
 }
 /* //CSS Pag Cadastro, Livros, Aluguel, Venda */
 
-/* CSS açoes edicao e remover pag de alugel e venda */
-a{
-    text-decoration: none;
-    color: var(--texto);
-}
-
-a:hover{
-    color: var(--darklogo);
-}
-
-h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* CSS pag home > servicos */
+.destaque{
+    display: block;
     text-align: center;
+    background-color: var(--destaque);
+    border-radius: 5px;
+    padding: 5px;
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 20px;
+}
+
+.destaque:hover{
+    transform: scale(1.05);
 }
